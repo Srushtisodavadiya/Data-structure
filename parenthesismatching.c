@@ -25,13 +25,13 @@ struct stack{
     s->top--;
   }
 int main()
-{   char * exp;
+{   char  exp[50];
     struct stack *s;
     s->size=50;
     s->arr=(char *)malloc(s->size*sizeof(char));
     s->top=-1;
     printf("enter expression:");
-    scanf("%s",&exp);
+    scanf("%s",exp);
     for(int i=0;exp[i]!='\0';i++)
     {
         if(exp[i]=='(')
